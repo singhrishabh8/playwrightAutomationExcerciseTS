@@ -1,0 +1,30 @@
+{
+  "name": "playwright-automation-exercise",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Agentic-first Playwright + TypeScript tests for automationexercise.com",
+  "scripts": {
+    "postinstall": "playwright install chromium",
+    "test": "playwright test",
+    "test:ui": "playwright test --project=chromium-ui",
+    "test:api": "playwright test --project=chromium-api",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure:report": "npm run allure:generate && npm run allure:open",
+    "allure:serve": "allure serve allure-results",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^22.10.0",
+    "allure-commandline": "^2.34.1",
+    "allure-playwright": "^3.4.2",
+    "typescript": "^5.7.2"
+  }
+}
