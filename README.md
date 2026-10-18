@@ -101,7 +101,7 @@ tests/
   support/      Playwright fixtures (clients, apiUser, authenticatedUser)
 AGENTS.md       Where-to-put-what for coding agents
 DECISIONS.md    Important architectural decisions
-AI_USAGE.md     AI collaboration log (fill in engineer sections)
+AI_USAGE.md     How AI was used (tools, prompts, corrections, mistakes caught)
 ```
 
 ## Architecture
